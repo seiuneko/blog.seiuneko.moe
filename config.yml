@@ -1,0 +1,53 @@
+baseURL: "https://blog.seiuneko.moe"
+title: "昀喵的不知所云"
+paginate: 5
+theme: PaperMod
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+pygmentsUseClasses: true
+defaultContentLanguage: "zh"
+hasCJKLanguage: true
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+    env: production
+    description: "猫言猫语"
+    author: seiuneko
+
+    defaultTheme: light
+    disableThemeToggle: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: true
+    ShowToc: true
+    DateFormat: "2006 年 01 月 02 日"
+
+    homeInfoParams:
+        Title: "昀喵的不知所云"
+        Content: >
+          你好，这里是昀喵。
+
+    assets:
+        disableHLJS: true
+        favicon: "static/iamges/favicon.ico"
+        favicon16x16: "static/iamges/favicon.ico"
+        favicon32x32: "static/iamges/favicon.ico"
+        # apple_touch_icon: "<link / abs url>"
+        # safari_pinned_tab: "<link / abs url>"
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        lineNos: true
+        style: igor
